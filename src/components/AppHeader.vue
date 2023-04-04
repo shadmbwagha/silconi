@@ -1,0 +1,54 @@
+<template>
+    <header>
+        <div class="px-0 py-2 text-white">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <div class="fw-bolder me-2 display-7 my-3">SILCONI</div>
+              </a>
+    
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0 text-small">
+                <li>
+                  <router-link to="/" class="nav-link text-secondary text-center mx-auto ">
+                    <!-- <i class="fa fa-home mx-auto text-muted"></i><br>-->
+                    Home
+                  </router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name : 'ItemsView'}" class="nav-link text-white text-center mx-auto">
+                    <!-- <i class="fa fa-laptop mx-auto"></i><br> -->
+                    Buy Electronics
+                  </router-link>
+                </li>
+
+                <li>
+                  <a href="#accesories" class="nav-link text-white text-center mx-auto">
+                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->
+                    Software Development
+                  </a>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+a{
+  text-decoration: none;
+  color: black;
+}
+.fa{
+  font-size: 20px;
+  color: white;
+  }
+header{background-color: black;}
+
+</style>
