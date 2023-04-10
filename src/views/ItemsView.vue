@@ -12,33 +12,16 @@
         <hr class="mb-2">
         <h6 class="pt-3">Laptops</h6>
         <div class="row">
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
+            <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-sm-4 div-md-6">
+                <ItemShelve :name="laptop.name" :price="laptop.cost"/>
             </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
+            
         </div>
 
         <div class="row bg-light">
             <h6 class="w-100 pt-3">Accesories</h6>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
-            </div>
-            <div class="col-6 col-sm-4 div-md-6">
-                <ItemShelve />
+            <div v-for="accesory in accesories" :key="accesory.id" class="col-6 col-sm-4 div-md-6">
+                <ItemShelve :name="accesory.name" :price="accesory.cost[0]"/>
             </div>
            
         </div>  
@@ -50,6 +33,7 @@
 <script>
 import ItemShelve from '../components/ItemShelve.vue';
 export default {
+    props:['laptops','accesories'],
     components: {ItemShelve}
 }
 </script>

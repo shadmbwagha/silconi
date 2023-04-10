@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ItemsView from '../views/ItemsView.vue'
 import ItemView from '../views/ItemView.vue'
+import NotFound from '../views/NotFound.vue'
 
 
 const routes = [
@@ -16,9 +17,16 @@ const routes = [
     component: ItemsView
   },
   {
-    path: '/ItemView',
+    path: '/ItemView/:id',
     name: 'ItemView',
-    component: ItemView
+    component: ItemView,
+    props: true
+  },
+  //catch all 404
+  {
+    path:'/:catchAll(.*)',
+    name:'NotFound',
+    component: NotFound
   }
  
 ]

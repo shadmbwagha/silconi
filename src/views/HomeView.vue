@@ -42,42 +42,23 @@
         <h4 class="py-4">Our product</h4>
         <p class="lead">from top giant product technology companies which have experience on field more years. They are durable, genuine, original and new ones.We sell them in very reasonable price and easy getting them on time.</p> 
         
-        <div class="py-5 row px-3">
-          <div class="col-6 col-sm-3 item">
-            <img class="img-fluid" src="../assets/earpodspro.jpeg">
-            <div class="mt-2 text-start">
-              <p>Apple Earpods pro</p>
-              <p class="lead text-danger">tsh <span class="fw-bold">55 000</span></p>
-              <div class="">
-                <div class="btn-buy fw-bold">Buy Now</div>
+        <div class="py-5 row px-3 item">
+          <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-md-3">
+              <div v-if="laptop.id<=4">
+                <router-link :to="{ name : 'ItemView', params:{id : laptop.id}}">
+                  <ItemShelve :name="laptop.name" :price="laptop.cost" class=""/>
+                </router-link>
               </div>
-            </div>
           </div>
+          
+        </div>
+        <div class="row">
           <div class="col-6 col-sm-3 item">
-            <img class="img-fluid" src="../assets/earpodspro.jpeg">
-            <div class="mt-2 text-start">
-              <p>Apple Earpods pro</p>
-              <p class="lead text-danger">tsh <span class="fw-bold">55 000</span></p>
-              <div class="">
-                <div class="btn-buy fw-bold">Buy Now</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-3 item">
-            <img class="img-fluid" src="../assets/earpodspro.jpeg">
-            <div class="mt-2 text-start">
-              <p>Apple Earpods pro</p>
-              <p class="lead text-danger">tsh <span class="fw-bold">55 000</span></p>
-              <div class="">
-                <div class="btn-buy fw-bold">Buy Now</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-3 item d-flex justify-content-center align-items-center">
-            <div class="btn-buy px-3 py-2" width="100px">see more...</div>
+            <router-link :to="{name:'ItemsView'}">
+              <div class="btn-buy px-3 py-2" width="100px">see more...</div>
+            </router-link>
           </div>
         </div>
-    
       </div>
 
     <div class="row my-5 text-center d-flex flex-column justify-content-between align-items-center" >
@@ -105,10 +86,12 @@
   
 </template>
 <script>
+import ItemShelve from '../components/ItemShelve.vue';
 
 
 export default{
-  components: {  }
+  props:['laptops'],
+  components: { ItemShelve}
 }
 </script>
   
@@ -168,14 +151,6 @@ body{
   background: white;
   height: 2px;
   width: 80%;
-}
-
-
-
-
-
-.item{
-  margin: 30px auto;
 }
 
 @media(max-width: 767px){

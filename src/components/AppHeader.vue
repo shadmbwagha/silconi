@@ -8,6 +8,12 @@
               </a>
     
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0 text-small">
+                <!-- <li>
+                  <div @click="back" class=" fa fa-arrow-left text-muted"></div>
+                </li> 
+                <li>
+                  <div @click="back" class=" fa fa-arrow-right"></div>
+                </li> -->
                 <li>
                   <router-link to="/" class="nav-link text-secondary text-center mx-auto ">
                     <!-- <i class="fa fa-home mx-auto text-muted"></i><br>-->
@@ -26,7 +32,9 @@
                     <!-- <i class="fa fa-gears mx-auto"></i><br> -->
                     Software Development
                   </a>
-                </li> 
+                </li>
+                
+                
               </ul>
             </div>
           </div>
