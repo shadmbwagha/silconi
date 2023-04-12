@@ -46,7 +46,7 @@
           <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-md-3">
               <div v-if="laptop.id<=4">
                 <router-link :to="{ name : 'ItemView', params:{id : laptop.id}}">
-                  <ItemShelve :name="laptop.name" :price="laptop.cost" class=""/>
+                  <ItemShelve :name="laptop.name" :price="laptop.cost[0]" :desc="laptop.specs" :img="laptop.img[0]"/>
                 </router-link>
               </div>
           </div>

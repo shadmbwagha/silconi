@@ -6,7 +6,7 @@
               <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                 <div class="fw-bolder me-2 display-7 my-3">SILCONI</div>
               </a>
-    
+             
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0 text-small">
                 <!-- <li>
                   <div @click="back" class=" fa fa-arrow-left text-muted"></div>

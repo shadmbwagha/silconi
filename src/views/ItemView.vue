@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="text-start fw-bold my-3">home >> Laptop >> Hp</div>
+    <div class="text-start fw-bold my-3">home >> product</div>
     <div class="row" v-if="item">
         <div class="col-12 col-md-6 bg-light py-3">
             <div class="large-image">
@@ -25,16 +25,14 @@
             </div>
             <div class="mt-4 pt-2">
                 <div>
-                    <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost}}</span></span>
+                    <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost[0]}}</span></span>
                     <br><span class="small" v-if="item.cost>=100000"><span class="fa fa-truck text-primary" ></span> free delivery in dar es salaam</span> 
                 </div>
-                <p class="lead fw-bold"> </p>
-             
             </div>
            
            
             <div class="my-3 d-flex justify-content-center align-items-center">
-                <div class="btn-buy fw-bold mt-5">Buy Now</div>
+                <div class="btn-buy fw-bold mt-5"><a :href="href + item.name + ' price: ' + item.cost">Buy Now</a></div>
             </div>
         </div>
     </div>
@@ -46,7 +44,8 @@ export default {
     props: ['id', 'laptops'],
     data(){
         return {
-            currentIndex: 0
+            currentIndex: 0,
+            href : "https://wa.me/+255621561022?text="
         }
     },
      computed:{
@@ -73,8 +72,8 @@ export default {
 <style>
 
 .small-img-group img{
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 70px;
+    max-width: 70px;
     cursor: pointer;
 }
 .small-img-group img.active{

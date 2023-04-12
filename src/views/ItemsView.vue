@@ -8,23 +8,18 @@
                 <div class="pill">gadgets</div>
                 <div class="pill">spares</div>
             </div>
+           
         </div>
         <hr class="mb-2">
         <h6 class="pt-3">Laptops</h6>
-        <div class="row">
+        <div class="row justify-content-center align-items-end">
             <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-sm-4 div-md-6">
-                <ItemShelve :name="laptop.name" :price="laptop.cost"/>
-            </div>
-            
+                <router-link :to="{name: 'ItemView', params:{id : laptop.id}}" class="link">
+                    <ItemShelve :name="laptop.name" :price="laptop.cost[0]" :desc="laptop.specs" :img="laptop.img[0]"/>
+                </router-link>
+                
+            </div>   
         </div>
-
-        <div class="row bg-light">
-            <h6 class="w-100 pt-3">Accesories</h6>
-            <div v-for="accesory in accesories" :key="accesory.id" class="col-6 col-sm-4 div-md-6">
-                <ItemShelve :name="accesory.name" :price="accesory.cost[0]"/>
-            </div>
-           
-        </div>  
         
     </div>
   
@@ -32,9 +27,19 @@
 
 <script>
 import ItemShelve from '../components/ItemShelve.vue';
+import {computed, ref} from 'vue'
 export default {
-    props:['laptops','accesories'],
-    components: {ItemShelve}
+    props:['laptops'],
+    components: {ItemShelve},
+    setup(){
+        // const search=''
+        // const matchingItem = computed(() => {
+        //     return props.laptops.filter(item => {
+        //         return item.name.toLowerCase().includes(this.search.toLowerCase())
+        //     })
+        // })
+        // return {search}
+    }
 }
 </script>
 
@@ -50,6 +55,11 @@ export default {
 .pill:hover{
     background: #eee;
     cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: black;
+
 }
 
 </style>
