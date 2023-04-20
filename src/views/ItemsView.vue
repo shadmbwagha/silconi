@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-start">
+    <div class="container-md text-start">
         <div class="my-3 d-flex justify-content-between align-items-center">
             <div class="text-start ">All - <span class="fw-bold">50 results</span></div>
             <div class="d-flex justify-content-between">
@@ -12,7 +12,7 @@
         </div>
         <hr class="mb-2">
         <h6 class="pt-3">Laptops</h6>
-        <div class="row justify-content-center align-items-end">
+        <div class="row justify-content-start align-items-end">
             <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-sm-4 div-md-6">
                 <router-link :to="{name: 'ItemView', params:{id : laptop.id}}" class="link">
                     <ItemShelve :name="laptop.name" :price="laptop.cost[0]" :desc="laptop.specs" :img="laptop.img[0]"/>

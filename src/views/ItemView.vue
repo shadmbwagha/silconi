@@ -18,21 +18,33 @@
             <div class="" v-for="x in listSplit(item.specs)" :key="x">
                 {{ x }}
             </div>
-          <div class="" v-for="option in item.options" :key="option">
+          <div class="" v-for="(option,indexOption) in item.options" :key="indexOption"  @click="currentCostIndex = indexOption">
                 <div class="option">
                     <p>{{ option }}</p>
                 </div>           
             </div>
+            
             <div class="mt-4 pt-2">
                 <div>
-                    <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost[0]}}</span></span>
-                    <br><span class="small" v-if="item.cost>=100000"><span class="fa fa-truck text-primary" ></span> free delivery in dar es salaam</span> 
-                </div>
+                    <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost[currentCostIndex]}}</span></span>
+                    </div>
+                        <span class="fa fa-truck text-primary" ></span>
+                        <div>
+                            <label>
+                                <input type="checkbox" v-model="isChecked" value="inside" checked> In dar es salaam region shipping cost: 
+                                    <span class="text-primary"> Free shipping</span>
+                            </label>
+                            <label  v-if="item.cost[currentCostIndex]>250000">
+                                <input type="checkbox" v-model="isChecked" value="outside"> Other regions shipping: <span class="text-primary"> 26,500/=</span>
+                            </label>
+                        </div>
+                    
+                
             </div>
            
            
             <div class="my-3 d-flex justify-content-center align-items-center">
-                <div class="btn-buy fw-bold mt-5"><a :href="href + item.name + ' price: ' + item.cost">Buy Now</a></div>
+                <div class="btn-buy fw-bold mt-5"><a :href="href + item.name + ' price: ' + item.cost[currentCostIndex]">Buy Now</a></div>
             </div>
         </div>
     </div>
@@ -40,12 +52,26 @@
 </template>
 
 <script>
+
+
 export default {
     props: ['id', 'laptops'],
+    setup(){
+        const options = document.querySelectorAll('.options p')
+options.forEach(item => {
+    option.addEventListener('click', ()=> {
+        options.forEach(option => {
+            option.classList.remove('selected');
+        });
+        option.classList.add('selected')
+    });
+});
+    },
     data(){
         return {
             currentIndex: 0,
-            href : "https://wa.me/+255621561022?text="
+            href : "https://wa.me/+255621561022?text=",
+            currentCostIndex: 0
         }
     },
      computed:{
@@ -56,6 +82,7 @@ export default {
         currentImage(){
             return this.item.img[this.currentIndex]
         }
+        
        
     },
     methods:{
@@ -70,6 +97,11 @@ export default {
 </script>
 
 <style>
+.btn-buy a{
+    color: white;
+    text-decoration: none;
+    
+}
 
 .small-img-group img{
     max-height: 70px;
@@ -93,4 +125,9 @@ export default {
 .option p:hover{
     background-color: #ddd;
 }
+
+.selected{
+    background-color: red;
+}
+
 </style>

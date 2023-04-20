@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5 mx-auto ">
+  <div class="container-md my-5 mx-auto ">
     <div class="main-category-show my-5 p-0 pd-md-3">
       <div class="main-display-1 d-flex flex-column justify-content-end">
         <div class="mb-5 pb-5">
@@ -22,11 +22,11 @@
         <div class="sub-display-1 d-flex flex-column justify-content-end">
           <div class="d-flex justify-content-between mb-2">
             <div class="ms-md-5 text-center">
-              <h6>Accesories</h6>
+              <h6 class="category">Accesories</h6>
               <div class="white-line"></div>
             </div>
             <div class="me-md-5 text-center">
-              <h6>Computer spares</h6>
+              <h6 class="category">Computer spares</h6>
               <div class="white-line"></div>
             </div>
           </div> 
@@ -42,7 +42,7 @@
         <h4 class="py-4">Our product</h4>
         <p class="lead">from top giant product technology companies which have experience on field more years. They are durable, genuine, original and new ones.We sell them in very reasonable price and easy getting them on time.</p> 
         
-        <div class="py-5 row px-3 item">
+        <div class="py-5 row px-md-3 item justify-content-center align-items-end">
           <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-md-3">
               <div v-if="laptop.id<=4">
                 <router-link :to="{ name : 'ItemView', params:{id : laptop.id}}">
@@ -52,8 +52,8 @@
           </div>
           
         </div>
-        <div class="row">
-          <div class="col-6 col-sm-3 item">
+        <div class="row justify-content-center align-items-center py-4">
+          <div class="col-6 col-sm-3 item text-center">
             <router-link :to="{name:'ItemsView'}">
               <div class="btn-buy px-3 py-2" width="100px">see more...</div>
             </router-link>
@@ -152,6 +152,13 @@ body{
   height: 2px;
   width: 80%;
 }
+.category:hover{
+  width:100px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #ddd;
+}
+
 
 @media(max-width: 767px){
   .main-category-show{
@@ -173,11 +180,6 @@ body{
     grid-template-areas: "sub-display-1 sub-display-2";
     height: 180px;
   }
-  .category:hover{
-    font-weight: bolder;
-    width: 100%;
-    cursor: pointer;
-    color: red;
-  }
+ 
 }
 </style>

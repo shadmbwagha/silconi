@@ -4,14 +4,14 @@
       <div class="row justify-content-center align-items-center">
         <div class="fw-bold h6 my-2 ">Contact Us:</div>
       </div>
-        <a class="p text-white" href="tel:+255621561022" >+255621561022</a><br>
+        <a class="p text-white" href="tel:+255621561022" >+255621561022</a>,
         <a href="email:info@silconi.com" class="p text-white" style="font-size: 18px;">
          info@silconi.com
        </a>
        <div>P.O.Box 251 Mbozi</div>
        <div>Songwe, Dar es Salaam Tanzania</div>
        
-       <div>By: Shadrack Sylvester Mbwagha, <span class="fw-bold">Silconi</span></div>
+       <div class="small pt-2">Product of <span class="fw-bold">Silconi</span>@2023</div>
     </div>
   </footer>
 </template>

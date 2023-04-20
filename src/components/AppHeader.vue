@@ -23,15 +23,22 @@
                 <li>
                   <router-link :to="{ name : 'ItemsView'}" class="nav-link text-white text-center mx-auto">
                     <!-- <i class="fa fa-laptop mx-auto"></i><br> -->
-                    Buy Electronics
+                    Electronics
                   </router-link>
                 </li>
 
                 <li>
-                  <a href="#accesories" class="nav-link text-white text-center mx-auto">
+                  <a href="#software development" class="nav-link text-white text-center mx-auto">
                     <!-- <i class="fa fa-gears mx-auto"></i><br> -->
                     Software Development
                   </a>
+                </li>
+
+                <li>
+                  <router-link :to="{name : 'AboutView'}" class="nav-link text-white text-center mx-auto">
+                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->
+                    About
+                  </router-link>
                 </li>
                 
                 
