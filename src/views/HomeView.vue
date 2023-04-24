@@ -12,7 +12,7 @@
             <div class="white-line"></div>
           </div>
           <div class="me-5 text-center category">
-            <h6>Gadgets</h6>
+            <router-link :to="{name : 'ItemsView'}" class="h6 link text-white">Gadgets</router-link>
             <div class="white-line"></div>
           </div>
         </div> 
@@ -22,11 +22,11 @@
         <div class="sub-display-1 d-flex flex-column justify-content-end">
           <div class="d-flex justify-content-between mb-2">
             <div class="ms-md-5 text-center">
-              <h6 class="category">Accesories</h6>
+              <router-link :to="{name : 'ItemsView'}"  class="category h6 link text-white">Accesories</router-link>
               <div class="white-line"></div>
             </div>
             <div class="me-md-5 text-center">
-              <h6 class="category">Computer spares</h6>
+              <router-link :to="{name : 'ItemsView'}" class="h6 category link text-white">Computer spares</router-link>
               <div class="white-line"></div>
             </div>
           </div> 
@@ -75,7 +75,7 @@
              <p class="display-3  my-4 text-primary fw-bold">Web Development</p>
              <p class="card-text mx-5 text-muted d-none d-lg-block">fast, beutiful responsive on all screen size</p>
              <p class="lead">Starting from: <span class="fw-bold">tsh 87,000/=</span></p>
-             <a class="btn btn-outline-primary btn-lg mt-3">See more ...</a>
+             <router-link :to="{name: 'AboutView'}" class="btn btn-outline-primary btn-lg mt-3">See more ...</router-link>
           </div>
         </div>
       </div>
@@ -152,13 +152,16 @@ body{
   height: 2px;
   width: 80%;
 }
-.category:hover{
+/* .category:hover{
   width:100px;
   font-weight: bolder;
   cursor: pointer;
   color: #ddd;
+} */
+router-link{
+  text-decoration: none;
+  color: white;
 }
-
 
 @media(max-width: 767px){
   .main-category-show{

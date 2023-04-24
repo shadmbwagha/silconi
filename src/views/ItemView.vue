@@ -6,8 +6,8 @@
             <div class="large-image">
                 <img :src="currentImage" alt="failed to load image" class="img-fluid">
             </div>
-            <div class="row small-img-group d-flex justify-content-start pt-2">
-                <div class="col col-start" v-for="(smallImg,index) in item.img" :key="index" @click="currentIndex = index">
+            <div class="small-img-group d-flex justify-content-center pt-2 text-start">
+                <div class="mx-2" v-for="(smallImg,index) in item.img" :key="index" @click="currentIndex = index">
                     <img :src="smallImg" alt="" :class="{active: currentIndex == index}" class="img-fluid">
                 </div>
                 
@@ -23,12 +23,16 @@
                     <p>{{ option }}</p>
                 </div>           
             </div>
+
+            <div class="my-3">
+                <span>pay Via: </span>
+                <span class="fw-bold">NMB, CRDB, M-Pesa, halopesa, tigopesa, airtel money</span>
+            </div>
             
             <div class="mt-4 pt-2">
                 <div>
                     <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost[currentCostIndex]}}</span></span>
                     </div>
-                        <span class="fa fa-truck text-primary" ></span>
                         <div>
                             <label>
                                 <input type="checkbox" v-model="isChecked" value="inside" checked> In dar es salaam region shipping cost: 
