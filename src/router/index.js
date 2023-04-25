@@ -34,12 +34,7 @@ const routes = [
     component: ItemView,
     props: true
   },
-  {
-    path: '/ConfirmOrder',
-    name: 'ConfirmOrder',
-    component: ConfirmOrder,
-    props: true
-  },
+
   //catch all 404
   {
     path:'/:catchAll(.*)',
