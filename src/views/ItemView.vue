@@ -1,5 +1,9 @@
 <template>
+    
   <div class="container">
+    <div>
+        <Modal />
+    </div>
     <div class="text-start fw-bold my-3">home >> product</div>
     <div class="row" v-if="item">
         <div class="col-12 col-md-6 bg-light py-3">
@@ -51,13 +55,14 @@
                 <div class="btn-buy fw-bold mt-5"><a :href="href + item.name + ' price: ' + item.cost[currentCostIndex]">Buy Now</a></div>
             </div>
         </div>
+    
     </div>
+    
   </div>
 </template>
 
 <script>
-
-
+import Modal from '../components/ConfirmOrder.vue'
 export default {
     props: ['id', 'laptops'],
     setup(){
@@ -71,6 +76,7 @@ options.forEach(item => {
     });
 });
     },
+    components: { Modal },
     data(){
         return {
             currentIndex: 0,
