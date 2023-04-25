@@ -13,7 +13,7 @@
         <hr class="mb-2">
         <h6 class="pt-3">Laptops</h6>
         <div class="row justify-content-start align-items-end">
-            <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-sm-4 div-md-6">
+            <div v-for="laptop in laptops" :key="laptop.id" class="col-12 col-sm-4 div-md-6">
                 <router-link :to="{name: 'ItemView', params:{id : laptop.id}}" class="link">
                     <ItemShelve :name="laptop.name" :price="laptop.cost[0]" :desc="laptop.specs" :img="laptop.img[0]"/>
                 </router-link>

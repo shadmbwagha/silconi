@@ -43,7 +43,7 @@
         <p class="lead">from top giant product technology companies which have experience on field more years. They are durable, genuine, original and new ones.We sell them in very reasonable price and easy getting them on time.</p> 
         
         <div class="py-5 row px-md-3 item justify-content-center align-items-end">
-          <div v-for="laptop in laptops" :key="laptop.id" class="col-6 col-md-3">
+          <div v-for="laptop in laptops" :key="laptop.id" class="col-12 col-md-3">
               <div v-if="laptop.id<=4">
                 <router-link :to="{ name : 'ItemView', params:{id : laptop.id}}">
                   <ItemShelve :name="laptop.name" :price="laptop.cost[0]" :desc="laptop.specs" :img="laptop.img[0]"/>
