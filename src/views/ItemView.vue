@@ -34,23 +34,25 @@
                 <div>
                     <span class="lead fw-bold">Total: </span ><span class="h4 ms-3" style="color:#E8491D;">tsh <span class="fw-bold">{{item.cost[currentCostIndex]}}</span></span>
                     </div>
-                        <div>
+                        <div class="small my-2">
                             <label>
-                                <input type="checkbox" v-model="isChecked" value="inside" checked> In dar es salaam region shipping cost: 
+                                In dar es salaam region shipping cost: 
                                     <span class="text-primary"> Free shipping</span>
                             </label>
                             <label  v-if="item.cost[currentCostIndex]>250000">
-                                <input type="checkbox" v-model="isChecked" value="outside"> Other regions shipping: <span class="text-primary"> 26,500/=</span>
+                                Other regions shipping: <span class="text-primary"> 26,500/=</span>
                             </label>
                         </div>
                     
                 
             </div>
            
-           
-            <div class="my-3 d-flex justify-content-center align-items-center">
-                <div class="btn-buy fw-bold mt-5"><a :href="href + item.name + ' price: ' + item.cost[currentCostIndex]">Buy Now</a></div>
-            </div>
+           <router-link :to="{name: 'ConfirmOrder', params: { ItemName: item.name, price: item.cost[currentCostIndex] }}" >
+                <div class="my-3 d-flex justify-content-center align-items-center">
+                    <div class="btn-buy fw-bold mt-5">Buy Now</div>
+                </div>
+           </router-link>
+            
         </div>
     
     </div>

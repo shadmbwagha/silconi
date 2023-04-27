@@ -1,7 +1,7 @@
 <template>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <AppHeader/>
+  <AppHeader class=""/>
   <router-view :laptops="laptops" :accesories="accesories"/>
   <AppFooter/>
   
@@ -57,8 +57,9 @@ body{
   background-color: black;
   padding: 10px 20px;
   color: white;
-  width: 80%;
+  width: 90%;
   text-align: center;
+ 
 }
 
 </style>

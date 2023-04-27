@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header >
         <div class="px-0 py-2 text-white">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -7,7 +7,7 @@
                 <div class="fw-bolder me-2 display-7 my-3">SILCONI</div>
               </a>
              
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0 text-small">
+              <ul class="nav col-12 col-lg-auto my-2 align-items-center my-md-0 text-small">
                 <!-- <li>
                   <div @click="back" class=" fa fa-arrow-left text-muted"></div>
                 </li> 

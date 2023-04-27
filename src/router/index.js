@@ -5,6 +5,8 @@ import ItemView from '../views/ItemView.vue'
 import AboutView from '../views/About.vue'
 import TermsView from '../views/TermsView.vue'
 import NotFound from '../views/NotFound.vue'
+import ConfirmOrder from '../views/ConfirmOrder.vue'
+
 
 
 const routes = [
@@ -32,6 +34,12 @@ const routes = [
     path: '/ItemView/:id',
     name: 'ItemView',
     component: ItemView,
+    props: true
+  },
+  {
+    path: '/ConfirmOrder/:ItemName/:price',
+    name: 'ConfirmOrder',
+    component: ConfirmOrder,
     props: true
   },
 

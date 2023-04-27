@@ -5,12 +5,12 @@
             <img :src="img" alt="" class="img-fluid h-40">
         </div>
         
-        <div class="p-2 pd-md-3 item">
+        <div class="p-2 p-md-3 item">
             <h4 class="">{{ name }}</h4>
             <p class="">{{ desc }}</p>
             <p class="lead" style="color:#E8491D;">tsh <strong class="fw-bold">{{ price }}</strong></p>
-            <div class="">
-            <div class="btn-buy fw-bold">Buy Now</div>
+            <div class="d-flex justify-content-center align-items-center mx-auto">
+                <div class="btn-buy fw-bold">Buy Now</div>
             </div>
         </div>
         
