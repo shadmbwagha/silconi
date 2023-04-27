@@ -16,28 +16,24 @@
                 </li> -->
                 <li>
                   <router-link to="/" class="nav-link text-secondary text-center mx-auto ">
-                    <!-- <i class="fa fa-home mx-auto text-muted"></i><br>-->
-                    Home
+                    <i class="fa fa-home mx-auto text-muted"></i>
                   </router-link>
                 </li>
                 <li>
                   <router-link :to="{ name : 'ItemsView'}" class="nav-link text-white text-center mx-auto">
-                    <!-- <i class="fa fa-laptop mx-auto"></i><br> -->
-                    Electronics
+                  Electronics
                   </router-link>
                 </li>
 
                 <li>
                   <router-link :to=" {name : 'AboutView'}" href="#software development" class="nav-link text-white text-center mx-auto">
-                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->
-                    Freelance
+                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->Freelance
                   </router-link>
                 </li>
 
                 <li>
                   <router-link :to="{name : 'AboutView'}" class="nav-link text-white text-center mx-auto">
-                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->
-                    About
+                    <!-- <i class="fa fa-gears mx-auto"></i><br> -->About
                   </router-link>
                 </li>
                 
