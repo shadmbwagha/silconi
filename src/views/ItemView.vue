@@ -47,7 +47,7 @@
                 
             </div>
            
-           <router-link :to="{name: 'ConfirmOrder', params: { ItemName: item.name, price: item.cost[currentCostIndex] }}" >
+           <router-link :to="{name: 'ConfirmOrder', params: { ItemName: item.name, price: item.cost[currentCostIndex] }}" style="text-decoration:none;">
                 <div class="my-3 d-flex justify-content-center align-items-center">
                     <div class="btn-buy fw-bold mt-5">Buy Now</div>
                 </div>
@@ -77,7 +77,7 @@ options.forEach(item => {
     data(){
         return {
             currentIndex: 0,
-            href : "https://wa.me/+255621561022?text=",
+
             currentCostIndex: 0
         }
     },

@@ -5,11 +5,11 @@
     <label>Name: </label>
     <input type="text" required v-model="name">
     <label>Phone Number: </label>
-    <input type="text" required>
+    <input type="number" required v-modal="number">
     <label>Security Code: </label>
     <input type="number" placeholder="i.e 2023" required>
     <label>Delivery address: </label>
-    <input type="text" required placeholder="i.e Dar-es-salaam mwenge mliman-city">
+    <input type="text" required placeholder="i.e Dar-es-salaam mwenge mliman-city" v-model="adress">
     <label class=""><i class="fa fa-truck text-primary"></i>Dar es salaam: <span class="text-primary">Free delivery</span></label>
     
     <div class="my-3 small">
@@ -23,7 +23,10 @@
     <label>I accept all <router-link :to="{ name : 'TermsView'}"> Terms and Conditions</router-link></label>
   </div>
   <div class="text-center">
-     <button class="btn btn-primary text-white" ><a :href="href + ItemName + ' Total price: ' + price" class="text-white fw-bold" style="text-decoration:none;">Pay Now</a></button>
+     <button class="btn btn-primary text-white" >
+      <a :href="href + ItemName + '%0a Total price: ' + price+'%0ashipping address:%0a'+name+'%0a'+ address +'%0a'+number +'%0a%0a%0aSend this message and pay message or photo%0a%0aPay on:%0aCRDB: 0152590342500 %0NMB:62010011388 %0aMobile Network:+255621561022 %0a%0aAfter finishing your payment foward us your message or photo of your receipt so that we arrange delivery fast'" class="text-white fw-bold" style="text-decoration:none;">
+      Pay Now</a>
+    </button>
   </div>
  
   </form>
@@ -38,7 +41,10 @@ export default {
   props: ['ItemName', 'price'],
   data(){
     return {
-      name: 'shad'
+      name: '',
+      address: '',
+      number: '',
+      href : "https://wa.me/+255621561022?text=",
     }
   },
 }
