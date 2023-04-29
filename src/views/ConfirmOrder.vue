@@ -24,7 +24,7 @@
   </div>
   <div class="text-center">
      <button class="btn btn-primary text-white" >
-      <a :href="href + ItemName + '%0aTotal price: ' + price+'%0ashipping address:%0a'+name+'%0a'+ address +'%0a'+number +'%0a%0aSend this message and pay %0a%0aPay on:%0aCRDB: 0152590342500 %0aNMB:62010011388 %0aMobile Network:0621561022%0aName:Shadrack Sylvester Mbwagha %0a%0aAfter finishing your payment foward us your payment message or photo of your receipt so that we arrange delivery as soon as possible'" class="text-white fw-bold" style="text-decoration:none;">
+      <a :href="href + ItemName + '%0aTotal price: ' + price+'%0ashipping address:%0a'+name+'%0a'+ address +'%0a'+number +'%0a%0aPay on:%0aCRDB: 0152590342500 %0aNMB:62010011388 %0aMobile Network:0621561022%0aName:Shadrack Sylvester Mbwagha %0a%0a.Send us this message and pay After finishing your payment foward us your payment message or photo of your receipt so that we arrange delivery as soon as possible'" class="text-white fw-bold" style="text-decoration:none;">
       Pay Now</a>
     </button>
   </div>
