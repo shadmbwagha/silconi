@@ -75,7 +75,7 @@
              <p class="display-3  my-4 text-primary fw-bold">Web Development</p>
              <p class="card-text mx-5 text-muted d-none d-lg-block">fast, beutiful responsive on all screen size</p>
              <p class="lead">Starting from: <span class="fw-bold">tsh 87,000/=</span></p>
-             <router-link :to="{name: 'AboutView'}" class="btn btn-outline-primary btn-lg mt-3">See more ...</router-link>
+             <router-link :to="{name: 'Freelance'}" class="btn btn-outline-primary btn-lg mt-3">See more ...</router-link>
           </div>
         </div>
       </div>

@@ -56,6 +56,67 @@
         </div>
     
     </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-4 div-md-6">
+            <div class="text-start my-4 shadow border-0 pb-3">
+        
+                <div class="">
+                    <img src="../assets/laptopscreen.webp" alt="" class="img-fluid h-40">
+                </div>
+                
+                <div class="p-2 p-md-3 item">
+                    <h4 class="">Laptop Screen replacement</h4>
+                    <p class="">Replace broken screen with new original high quality screen</p>
+                    <p class="lead" style="color:#1B373B;">Starting from: <strong class="fw-bold text-primary">tsh 60,000/=</strong></p>
+                    <div class="d-flex justify-content-center align-items-center mx-auto">
+                        <a class="btn-buy btn-primary border-0 fw-bold text-white" href="https://wa.me/+255621561022?text=Spare name:%0a">Request Inquiry</a>
+                    </div>
+                </div>
+                
+            </div>
+          
+        </div>
+
+        <div class="col-12 col-sm-4 div-md-6">
+            <div class="text-start my-4 shadow border-0 pb-3">
+        
+                <div class="">
+                    <img src="../assets/keyboard.jpg" alt="" class="img-fluid h-40">
+                </div>
+                
+                <div class="p-2 p-md-3 item">
+                    <h4 class="">Keyboard, laptop housing, Mouse, speaker replacement available</h4>
+                    <p class="lead" style="color:#1B373B;">Starting from: <strong class="fw-bold text-primary">tsh 20,000/=</strong></p>
+                    <div class="d-flex justify-content-center align-items-center mx-auto">
+                        <a class="btn-buy btn-primary border-0 fw-bold text-white" href="https://wa.me/+255621561022?text=Spare name:%0a">Request Inquiry</a>
+                    </div>
+                </div>
+                
+            </div>
+          
+        </div>
+        <div class="col-12 col-sm-4 div-md-6">
+            <div class="text-start my-4 shadow border-0 pb-3">
+        
+                <div class="">
+                    <img src="../assets/pad.jpeg" alt="" class="img-fluid h-40">
+                </div>
+                
+                <div class="p-2 p-md-3 item">
+                    <h4 class="">Gadgets like games, console, Gamepads</h4>
+                    <p class="lead" style="color:#1B373B;">Starting from: <strong class="fw-bold text-primary">tsh 25,000/=</strong></p>
+                    <div class="d-flex justify-content-center align-items-center mx-auto">
+                        <a class="btn-buy btn-primary border-0 fw-bold text-white" href="https://wa.me/+255621561022?text=Spare name:%0a">Request Inquiry</a>
+                    </div>
+                </div>
+                
+            </div>
+          
+        </div>
+       
+      
+    </div>
     
   </div>
 </template>
@@ -109,6 +170,7 @@ options.forEach(item => {
     text-decoration: none;
     
 }
+
 
 .small-img-group img{
     max-height: 70px;

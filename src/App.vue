@@ -21,6 +21,7 @@ export default{
         {name:"Thinkpad 11e Yoga gen 6 x360 touchscreen", specs:'8 gen intel core m3-81000Y 1.1 to 3.4 GHZ turbo boost 4MB cache,11.6" intel&reg; UHD Graphics 615 touchscreen,8GB RAM 1866MHZ, 256GB PCIe SSD, Windows 10 pro 5hrs battery',options:[], cost:[497600], img:[require("@/assets/thinkpad11eyogay1.jpg"),require("@/assets/thinkpad11eyogay2.jpg"),require("@/assets/thinkpad11eyogay3.jpg"),require("@/assets/thinkpad11eyogay4.jpg"),require("@/assets/thinkpad11eyogay5.jpg"),],id:3},
         {name:"Hp EliteBook 820 G3 notebook PC", specs:"core i5-6300U(6 gen) 2.8GHZ 3MB cache,12.5inch intel HD graphics 520, HDD 500GB 7200rpm, 8GB RAM DDR4, windows 11 4 hrs battery life ",options:[], cost:[565000], img:[require("@/assets/hp820g3y1.jpg"),require("@/assets/hp820g3y2.jpg"),require("@/assets/hp820g3y3.jpg"),require("@/assets/hp820g3y1.jpg"),], id:4},
         {name:"hp EliteBook x2 1012 G2 tablet touchscreen", specs:"intel core i5-7100U 2.4GHZ 3MB cache, 12.3inch better than QHD intel HD 620, 256GB SSD M2 and SATA, 8GB DDR 3, windows 11 pro  ",options:[], cost:[655000], img:[require("@/assets/EliteBookx21012.png")], id:5},
+        {name:"hp EliteBook x2 1012 G2 tablet touchscreen", specs:"intel core i7-7100U 2.9GHZ 8MB cache, 12.3inch better than QHD intel HD 620, 256GB SSD M2 and SATA, 8GB DDR 3, windows 11 pro  ",options:[], cost:[690000], img:[require("@/assets/hpx2y1.jpg"),require("@/assets/hpx2y2.jpg"),require("@/assets/hpx2y3.jpg")], id:15},
         {name:"hp ElteBook 840 G5 tuchscreen", specs: "core i5-7gen 2.5GHZ 6MB cache, 14inch intel UHD 620, 256GB SSD PCIe NVme, 8GB RAM DDR4 2400MHZ, windows 11 pro pes 23", cost:[720000],options:[], img:[require("@/assets/hp840g5.jpeg"),require("@/assets/hp840g5y2.jpeg"),require("@/assets/hp840g5y3.jpeg"),require("@/assets/hp840g5y4.jpeg"),require("@/assets/hp840g5y5.jpeg"),require("@/assets/hp840g5y6.jpeg")], id:6},
         {name:"harddisk sata 2.5 320GB, 500GB, 1TB",specs:"fast file transfer, low heat, less noise", options:['320GB', '500GB 7200rpm', '1TB'],cost:[30000,45000,98000],img:[require("@/assets/hddy1.jpeg")],id:7},
         {name:"External Harddisk case",specs:"protect hard disk from shocks, keep hard disk health in long time", options:["1","2"], cost:[15000,20000],img:[require("@/assets/ssdm2256.jpeg")],id:8},
@@ -57,7 +58,7 @@ body{
   background-color: black;
   padding: 10px 20px;
   color: white;
-  width: 90%;
+  width: 70%;
   text-align: center;
  
 }

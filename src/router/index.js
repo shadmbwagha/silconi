@@ -6,6 +6,7 @@ import AboutView from '../views/About.vue'
 import TermsView from '../views/TermsView.vue'
 import NotFound from '../views/NotFound.vue'
 import ConfirmOrder from '../views/ConfirmOrder.vue'
+import Freelance from '../views/Freelance.vue'
 
 
 
@@ -42,7 +43,11 @@ const routes = [
     component: ConfirmOrder,
     props: true
   },
-
+  {
+    path: '/Freelance',
+    name: 'Freelance',
+    component: Freelance
+  },
   //catch all 404
   {
     path:'/:catchAll(.*)',

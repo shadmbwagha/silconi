@@ -18,7 +18,7 @@
     </div>
     <div class="row my-5" id="shad">
         <div class="col-md-6">
-            <img src="../assets/shad.jpeg" alt="" class="img-fluid" style="height:250px; width:250px; object-fit:cover; border-radius:50%">
+            <img src="../assets/shadsilconi.jpeg" alt="" class="img-fluid" style="max-height:300px; max-width:350px;  border-radius:50%">
             <h4 class="pt-2">Shadrack Sylvester Mbwagha, CEO, Developer</h4>
         </div>
         <div class="col-md-6 py-3 mx-2 mx-md-0 text-start">

@@ -26,7 +26,7 @@
                 </li>
 
                 <li>
-                  <router-link :to=" {name : 'AboutView'}" href="#software development" class="nav-link text-white text-center mx-auto">
+                  <router-link :to=" {name : 'Freelance'}" href="#software development" class="nav-link text-white text-center mx-auto">
                     <!-- <i class="fa fa-gears mx-auto"></i><br> -->Freelance
                   </router-link>
                 </li>
