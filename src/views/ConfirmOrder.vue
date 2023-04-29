@@ -9,7 +9,7 @@
     <label>Security Code: </label>
     <input type="number" placeholder="i.e 2023" required>
     <label>Delivery address: </label>
-    <input type="text" required placeholder="i.e Dar-es-salaam mwenge mliman-city" v-model="adress">
+    <input type="text" required placeholder="i.e Dar-es-salaam mwenge mliman-city" v-model="address">
     <label class=""><i class="fa fa-truck text-primary"></i>Dar es salaam: <span class="text-primary">Free delivery</span></label>
     
     <div class="my-3 small">
@@ -24,7 +24,7 @@
   </div>
   <div class="text-center">
      <button class="btn btn-primary text-white" >
-      <a :href="href + ItemName + '%0a Total price: ' + price+'%0ashipping address:%0a'+name+'%0a'+ address +'%0a'+number +'%0a%0a%0aSend this message and pay message or photo%0a%0aPay on:%0aCRDB: 0152590342500 %0NMB:62010011388 %0aMobile Network:+255621561022 %0a%0aAfter finishing your payment foward us your message or photo of your receipt so that we arrange delivery fast'" class="text-white fw-bold" style="text-decoration:none;">
+      <a :href="href + ItemName + '%0aTotal price: ' + price+'%0ashipping address:%0a'+name+'%0a'+ address +'%0a'+number +'%0a%0aSend this message and pay %0a%0aPay on:%0aCRDB: 0152590342500 %0aNMB:62010011388 %0aMobile Network:0621561022%0aName:Shadrack Sylvester Mbwagha %0a%0aAfter finishing your payment foward us your payment message or photo of your receipt so that we arrange delivery as soon as possible'" class="text-white fw-bold" style="text-decoration:none;">
       Pay Now</a>
     </button>
   </div>

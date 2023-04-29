@@ -12,7 +12,7 @@
             <br><br>
             we are so proud we've created silconi and we're thrilled to be able to share our passion for sustainable tech service with you.
             thank you for supporting our brand and we can't wait to see incorporate silconi products and solutions in your home, office, institute<br><br>
-            <div class="btn btn-primary col-3 my-3">Contact Us</div>
+            <div class="btn btn-primary col-md-3 my-3" style="background-color:#1B373B; border:0;">Contact Us</div>
          </div>
          
     </div>
