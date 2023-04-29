@@ -2,9 +2,8 @@
   <div class="container-md my-5 mx-auto ">
     <div class="main-category-show my-5 p-0 pd-md-3">
       <div class="main-display-1 d-flex flex-column justify-content-end">
-        <div class="mb-5 pb-5">
-          <h3>Brand new product</h3>
-          <h6>genuine and original products with warranty</h6>
+        <div class="" style="margin-bottom:150px;">
+          <h3>Brand new product + Warranty</h3>
         </div>
         <div class="d-flex justify-content-between mb-4">
           <div class="ms-5 text-center category">
