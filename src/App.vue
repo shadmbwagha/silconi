@@ -24,12 +24,12 @@ export default{
         {name:"hp EliteBook x2 1012 G2 tablet touchscreen", specs:"intel core i7-7100U 2.9GHZ 8MB cache, 12.3inch better than QHD intel HD 620, 256GB SSD M2 and SATA, 8GB DDR 3, windows 11 pro  ",options:[], cost:[690000], img:[require("@/assets/hpx2y1.jpg"),require("@/assets/hpx2y2.jpg"),require("@/assets/hpx2y3.jpg")], id:15},
         {name:"hp ElteBook 840 G5 tuchscreen", specs: "core i5-7gen 2.5GHZ 6MB cache, 14inch intel UHD 620, 256GB SSD PCIe NVme, 8GB RAM DDR4 2400MHZ, windows 11 pro pes 23", cost:[720000],options:[], img:[require("@/assets/hp840g5.jpeg"),require("@/assets/hp840g5y2.jpeg"),require("@/assets/hp840g5y3.jpeg"),require("@/assets/hp840g5y4.jpeg"),require("@/assets/hp840g5y5.jpeg"),require("@/assets/hp840g5y6.jpeg")], id:6},
         {name:"harddisk sata 2.5 320GB, 500GB, 1TB",specs:"fast file transfer, low heat, less noise", options:['320GB', '500GB 7200rpm', '1TB'],cost:[30000,45000,98000],img:[require("@/assets/hddy1.jpeg")],id:7},
-        {name:"External Harddisk case",specs:"protect hard disk from shocks, keep hard disk health in long time", options:["1","2"], cost:[15000,20000],img:[require("@/assets/ssdm2256.jpeg")],id:8},
+        {name:"External Harddisk case",specs:"protect hard disk from shocks, keep hard disk health in long time", options:["1-10,000","2-14,000","3-20,000"], cost:[10000,14000, 200000],img:[require("@/assets/ssdm2256.jpeg")],id:8},
         {name:"RAM 2GB 8GB 16GB DDR3 DDR4", specs:"boost your computer speed and perfomance", options:['2GB-DDR3', '4GB-DDR3', '8GB-DDR3', '4GB-DDR4','8GB-DDR4','16GB-DDR4'], cost:[25000,35000,65000,55000, 70000,120000],img:[require("@/assets/ramy2.jpeg")],id:9},
         {name:"Laptops Adapter",specs:"power you laptop in short time and durable perfect replacement of pc adapter",options:["adapter", " Pro adapter"],cost:[25000,30000],img:[require("@/assets/laptopsadaptery1.jpeg")],id:10},
         {name:"Earpods",specs:"Quality music",options:[],cost:[15000],img:[require("@/assets/earpods85y1.jpeg"),require("@/assets/earpods85y2.jpeg")],id:12},
         {name:"Earpods",specs:"Quality music, pure bass, bluetooth 5.1, 250mAh",options:[],cost:[30000],img:[require("@/assets/earpods30y1.jpeg"),require("@/assets/earpods30y2.jpeg")],id:13},
-        {name:"Earpods pro",specs:"good music, noise cancellation ",options:[],cost:[55000],img:[require("@/assets/earpodspro.jpeg")],id:14}
+        {name:"airpods pro",specs:"good music, noise cancellation ",options:[],cost:[45000],img:[require("@/assets/earpodspro.jpeg")],id:14}
       ]
     }
   },
