@@ -1,5 +1,5 @@
 <template>
-  <div class="container-md">
+ <div class="container-md">
     <div class="row bg-light text-start ps-2">
         <h2 class="text-center my-3">About Us</h2>
         <div class="col-12 col-md-8">Welcome to <b>silconi</b>, ecommerce site and freelance site for high quality electronic product and high tech works(freelance). 
@@ -32,12 +32,12 @@
                  electronic circuit design and building,computer system repair and maintainance
             </div>
         </div>
-    </div>
+    </div> 
     <div class="py-4">
         To see our policies, Terms and Condition <router-link :to="{name: 'TermsView'}">Click here</router-link>
     </div>
     
-  </div>
+</div>
 </template>
 
 <script>

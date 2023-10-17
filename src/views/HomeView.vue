@@ -1,6 +1,6 @@
 <template>
   <div class="container-md my-5 mx-auto ">
-    <div class="main-category-show my-5 p-0 pd-md-3">
+    <!-- <div class="main-category-show my-5 p-0 pd-md-3">
       <div class="main-display-1 d-flex flex-column justify-content-end">
         <div class="" style="margin-bottom:150px;">
           <h3>Brand new product + Warranty</h3>
@@ -34,13 +34,13 @@
             <h5 class="d-none d-md-none d-sm-none">Smart Home <span class="text-primary fw-bolder">Comming soon</span></h5>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="my-5 bg-light" >
-        <h4 class="py-4">Our product</h4>
+    <div class="my-3" >
+        <!-- <h4 class="py-4">Our product</h4>
         <p class="lead">from top giant product technology companies which have experience on field more years. They are durable, genuine, original and new ones.We sell them in very reasonable price and easy getting them on time.</p> 
-        
+         -->
         <div class="py-5 row px-md-3 item justify-content-center align-items-end">
           <div v-for="laptop in laptops" :key="laptop.id" class="col-12 col-md-3">
               <div v-if="laptop.id<=4">

@@ -1,13 +1,13 @@
 <template>
-    <header >
-        <div class="px-0 py-2 text-white">
+    <header class="shadow-sm">
+        <div class="px-0 py- text-black">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-black text-decoration-none">
                 <div class="fw-bolder me-2 display-7 my-3">SILCONI</div>
               </a>
              
-              <ul class="nav col-12 col-lg-auto my-2 align-items-center my-md-0 text-small">
+              <ul class="nav col-12-auto col-lg-auto my-2 align-items-center my-md-0 text-small">
                 <!-- <li>
                   <div @click="back" class=" fa fa-arrow-left text-muted"></div>
                 </li> 
@@ -20,19 +20,19 @@
                   </router-link>
                 </li>
                 <li>
-                  <router-link :to="{ name : 'ItemsView'}" class="nav-link text-white text-center mx-auto">
+                  <router-link :to="{ name : 'ItemsView'}" class="nav-link text-black text-center mx-auto">
                   Electronics
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to=" {name : 'Freelance'}" href="#software development" class="nav-link text-white text-center mx-auto">
+                  <router-link :to=" {name : 'Freelance'}" href="#software development" class="nav-link text-black text-center mx-auto">
                     <!-- <i class="fa fa-gears mx-auto"></i><br> -->Freelance
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to="{name : 'AboutView'}" class="nav-link text-white text-center mx-auto">
+                  <router-link :to="{name : 'AboutView'}" class="nav-link text-black text-center mx-auto">
                     <!-- <i class="fa fa-gears mx-auto"></i><br> -->About
                   </router-link>
                 </li>
@@ -58,8 +58,8 @@ a{
 }
 .fa{
   font-size: 20px;
-  color: white;
+  color: black;
   }
-header{background-color: black;}
+
 
 </style>
