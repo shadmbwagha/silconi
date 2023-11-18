@@ -1,5 +1,5 @@
 <template>
-    <div class="text-start my-4 shadow border-0 pb-3">
+    <div class="text-start my-3 shadow shadow-sm border-0 pb-3">
         
         <div class="">
             <img :src="img" alt="" class="img-fluid h-40">

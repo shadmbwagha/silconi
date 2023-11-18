@@ -138,7 +138,6 @@ options.forEach(item => {
     data(){
         return {
             currentIndex: 0,
-
             currentCostIndex: 0
         }
     },
@@ -150,8 +149,6 @@ options.forEach(item => {
         currentImage(){
             return this.item.img[this.currentIndex]
         }
-        
-       
     },
     methods:{
         listSplit(x){

@@ -1,6 +1,6 @@
 <template>
-    <header class="shadow-sm">
-        <div class="px-0 py- text-black">
+    <header class="shadow-sm fixed">
+        <div class="px-0 py-0 text-black">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none" style="color:#288085;">
